@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "concurrently": "^5.2.0",
     "install": "^0.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -17,12 +16,13 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    "server": "node ./server.js",
+    "start": "node ./server.js",
     "dev": "concurrently \"react-scripts start\" \"node ./server.js\"",
-    "start": "npm run server",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server:static": "json-server --watch ./src/data/db.json --port 8080",
+    "server": "node ./server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^5.2.0",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
