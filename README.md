@@ -18,7 +18,7 @@ You will also see any lint errors in the console.
 
 ## Preview
 
-###Demo https://primeflix.vercel.app/
+### Demo https://primeflix.vercel.app/
 
 ![Primeflix](https://user-images.githubusercontent.com/32379195/89138856-511a6280-d513-11ea-80a7-28de7cfefe7c.gif)
 
